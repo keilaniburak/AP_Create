@@ -2,7 +2,7 @@
  {
    "FIELD1": "209551",
    "FIELD2": "University of Oregon",
-   "FIELD3": "1",
+   "FIELD3": 3.60,
    "FIELD4": "2",
    "FIELD5": "1",
    "FIELD6": "500",
@@ -26,7 +26,7 @@
  {
    "FIELD1": "236948",
    "FIELD2": "University of Washington-Seattle Campus",
-   "FIELD3": "1",
+   "FIELD3": 3.76,
    "FIELD4": "3",
    "FIELD5": "1",
    "FIELD6": "540",
