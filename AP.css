@@ -1,0 +1,17 @@
+h1  {
+  color : red;
+  background-color : whitesmoke;
+  border : 10x solid  ;
+ }
+
+body {
+ font-family: Gill Sans, sans-serif;
+}
+#para1 {
+    text-align: right;
+    color: grey;
+}
+#para2 {
+    text-align:left;
+    color: green;
+}
