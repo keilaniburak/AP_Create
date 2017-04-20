@@ -1,5 +1,5 @@
 function harvard() {
-        if ((document.getElementById('screen1').value >= 4.5) && (document.getElementById('screen2').value == 800) && (document.getElementById('screen3').value == 800) && (document.getElementById('screen4').value >= 35) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
+    if ((document.getElementById('screen1').value >= 4.5) && (document.getElementById('screen2').value == 800) && (document.getElementById('screen3').value == 800) && (document.getElementById('screen4').value >= 35) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((document.getElementById('screen1').value >= 4.1) && (document.getElementById('screen2').value >= 700) && (document.getElementById('screen3').value >= 700) && (document.getElementById('screen4').value >= 32) && (document.getElementById('screen5').value >= 31) && (document.getElementById('screen6').value >= 33)) {
@@ -11,7 +11,7 @@ function harvard() {
 }
 
 function berkeley() {
-        if ((document.getElementById('screen1').value >= 4.39) && (document.getElementById('screen2').value >= 740) && (document.getElementById('screen3').value >= 770) && (document.getElementById('screen4').value >= 34) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
+    if ((document.getElementById('screen1').value >= 4.39) && (document.getElementById('screen2').value >= 740) && (document.getElementById('screen3').value >= 770) && (document.getElementById('screen4').value >= 34) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
         return "Top applicant, but Cal is highly competitive. ";
     }
     else if ((document.getElementById('screen1').value >= 4.0) && (document.getElementById('screen2').value >= 610) && (document.getElementById('screen3').value >= 640) && (document.getElementById('screen4').value >= 30) && (document.getElementById('screen5').value >= 29) && (document.getElementById('screen6').value >= 31)) {
@@ -47,7 +47,7 @@ function oregon() {
 }
 
 function hawaii() {
-        if ((document.getElementById('screen1').value >= 3.5) && (document.getElementById('screen2').value >= 580) && (document.getElementById('screen3').value >= 610) && (document.getElementById('screen4').value >= 25) && (document.getElementById('screen5').value >= 26) && (document.getElementById('screen6').value >= 25)) {
+    if ((document.getElementById('screen1').value >= 3.5) && (document.getElementById('screen2').value >= 580) && (document.getElementById('screen3').value >= 610) && (document.getElementById('screen4').value >= 25) && (document.getElementById('screen5').value >= 26) && (document.getElementById('screen6').value >= 25)) {
         return "High Chances! ";
     }
     else if ((document.getElementById('screen1').value >= 3.0) && (document.getElementById('screen2').value >= 480) && (document.getElementById('screen3').value >= 490) && (document.getElementById('screen4').value >= 20) && (document.getElementById('screen5').value >= 20) && (document.getElementById('screen6').value >= 19)) {
@@ -58,3 +58,47 @@ function hawaii() {
     }
 }
 
+function harvardInputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) || (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) || (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) || (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
+        return harvard();
+    }
+}
+
+function berkeleyInputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) || (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) || (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) || (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
+        return berkeley();
+    }
+}
+
+function washingtonInputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) || (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) || (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) || (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
+        return washington();
+    }
+}
+
+function oregonInputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) || (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) || (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) || (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
+        return oregon();
+    }
+}
+
+function hawaiiInputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) || (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) || (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) || (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
+        return hawaii();
+    }
+}
