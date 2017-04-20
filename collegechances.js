@@ -1,4 +1,5 @@
 function harvard() {
+
     if ((document.getElementById('screen1').value >= 4.5) && (document.getElementById('screen2').value == 800) && (document.getElementById('screen3').value >= 800) && (document.getElementById('screen4').value >= 35) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
@@ -42,6 +43,6 @@ function inputErrorCheck() {
         return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
     }
     else {
-
+       return harvard();
     }
 }
