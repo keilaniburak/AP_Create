@@ -1,5 +1,5 @@
 function harvard() {
-        if ((document.getElementById('screen1').value >= 4.5) && (document.getElementById('screen2').value == 800) && (document.getElementById('screen3').value >= 800) && (document.getElementById('screen4').value >= 35) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
+    if ((document.getElementById('screen1').value >= 4.5) && (document.getElementById('screen2').value == 800) && (document.getElementById('screen3').value >= 800) && (document.getElementById('screen4').value >= 35) && (document.getElementById('screen5').value >= 35) && (document.getElementById('screen6').value >= 35)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((document.getElementById('screen1').value >= 4.1) && (document.getElementById('screen2').value >= 700) && (document.getElementById('screen3').value >= 700) && (document.getElementById('screen4').value >= 32) && (document.getElementById('screen5').value >= 31) && (document.getElementById('screen6').value >= 33)) {
@@ -34,4 +34,14 @@ function oregon() {
     }
 }
 
+function inputErrorCheck() {
+    if ((document.getElementById('screen1').value > 5.0) ||
+     (document.getElementById('screen2').value > 800) || (document.getElementById('screen2').value < 200) ||
+    (document.getElementById('screen3').value > 800) || (document.getElementById('screen3').value < 200) ||
+    (document.getElementById('screen4').value > 36) || (document.getElementById('screen5').value > 36) || (document.getElementById('screen6').value > 36)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+    else {
 
+    }
+}
