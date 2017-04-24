@@ -102,3 +102,61 @@ function hawaiiInputErrorCheck() {
         return hawaii();
     }
 }
+
+function Applicant(WeightedGPA, SATCriticalReading, SATMath, ACTComposite, ACTMath, ACTEnglish) {
+
+    this.WeightedGPA = WeightedGPA;
+
+    this.SATCriticalReading = SATCriticalReading;
+
+    this.SATMath = SATMath;
+
+    this.ACTComposite = ACTComposite;
+
+    this.ACTMath = ACTMath;
+
+    this.ACTEnglish = ACTEnglish;
+}
+
+function College(WeightedGPA25Pct, WeightedGPA75Pct, SATCriticalReading25Pct, SATCriticalReading75Pct, SATMath25Pct, SATMath75Pct, ACTComposite25Pct, ACTComposite75Pct, ACTMath25Pct, ACTMath75Pct, ACTEnglish25Pct, ACTEnglish75Pct) {
+
+    this.WeightedGPA25Pct = WeightedGPA25Pct;
+
+    this.WeightedGPA75Pct = WeightedGPA75Pct;
+
+    this.SATCriticalReading25Pct = SATCriticalReading25Pct;
+
+    this.SATCriticalReading75Pct = SATCriticalReading75Pct;
+
+    this.SATMath25Pct = SATMath25Pct;
+
+    this.SATMath75Pct = SATCriticalReading75Pct;
+
+    this.ACTComposite25Pct = ACTComposite25Pct;
+
+    this.ACTComposite75Pct = ACTComposite75Pct;
+
+    this.ACTMath25Pct = ACTMath25Pct;
+
+    this.ACTMath75Pct = ACTMath75Pct;
+
+    this.ACTEnglish25Pct = ACTEnglish25Pct;
+
+    this.ACTEnglish75Pct = ACTEnglish75Pct;
+}
+
+var Harvard = new College(4.1, 4.5, 700, 800, 700, 800, 32, 35, 31, 35, 33, 35);
+
+var Berkeley = new College(4.0, 4.4, 610, 740, 640, 770, 30, 34, 29, 35, 31, 35);
+
+var Washington = new College(3.5. 3.9, 540, 660, 610, 710, 26, 31, 26, 32, 25, 32);
+
+var Oregon = new College(3.0, 3.6, 500, 620, 500, 610, 22, 27, 21, 27, 21, 28);
+
+var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
+
+function getApplicantData() {
+    var weightedGPA = document.getElementById('screen1').value;
+    var satcriticalReadng = document.getElementById('screen2').value;
+    var
+}
