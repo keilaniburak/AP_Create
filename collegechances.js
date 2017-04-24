@@ -158,5 +158,8 @@ var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 function getApplicantData() {
     var weightedGPA = document.getElementById('screen1').value;
     var satcriticalReadng = document.getElementById('screen2').value;
-    var
+    var satMath = document.getElementById('screen3').value;
+    var actComposite = document.getElementById('screen4').value;
+    var actMath = document.getElementById('screen5').value;
+    var actEnglish = document.getElementById('screen6').value;
 }
