@@ -30,7 +30,8 @@ var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 function checkChances() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
 
-    checkHawaii();
+   result = checkHawaii();
+    return result;
 }
 
 function checkHarvard() {
