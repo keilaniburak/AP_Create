@@ -24,3 +24,13 @@ body {
     text-align:left;
     color: green;
 }
+
+#chances {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#chances td {
+    border: 4px solid red;
+    padding: 8px;
+}

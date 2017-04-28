@@ -198,3 +198,4 @@ function checkHawaii() {
         return "Little to no chance. Try an easier school.";
     }
 }
+
