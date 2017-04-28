@@ -3,17 +3,14 @@ h1  {
   background-color : whitesmoke;
   border : 5px solid navy  ;
  }
-p1  {
-    background-color : blueviolet;
-    color : bisque;
-}
+
 }
 h2  {
     color : royalblue
 }
 body {
  font-family: Gill Sans, sans-serif;
-    color : skyblue;
+    color : navy;
     background-color:lightgray;
 }
 #para1 {
