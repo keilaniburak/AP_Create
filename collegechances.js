@@ -37,52 +37,52 @@ function checkChances() {
 function checkHarvard() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((weightedGPA >= Harvard.WeightedGPA75Pct) && (satcriticalReading == Harvard.SATCriticalReading75Pct) && (satMath == Harvard.SATMath75Pct) && (actComposite >= Harvard.ACTComposite75Pct) && (actMath >= Harvard.ACTMath75Pct) && (actEnglish >= Harvard.ACTEnglish75Pct)) {
-        return "Top applicant, but Harvard is VERY competitive. ";
+        document.getElementById("Harvard").innerHTML =  "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((weightedGPA >= Harvard.WeightedGPA25Pct) && (satcriticalReading >= Harvard.SATCriticalReading25Pct) && (satMath >= Harvard.SATMath25Pct) && (actComposite >= Harvard.ACTComposite25Pct) && (actMath >= Harvard.ACTMath25Pct) && (actEnglish >= Harvard.ACTEnglish25Pct)) {
-        return "Would be sufficient at another school, but won't be enough.";
+        document.getElementById("Harvard").innerHTML =  "Would be sufficient at another school, but won't be enough.";
     }
     else {
-        return "Little to no chance. Try an easier school.";
+        document.getElementById("Harvard").innerHTML =  "Little to no chance. Try an easier school.";
     }
 }
 
 function checkBerkeley() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReading >= Berkeley.SATCriticalReading75Pct) && (satMath >= Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
-        return "Top applicant, but Cal is still competitive. ";
+        document.getElementById("Berkeley").innerHTML =  "Top applicant, but Cal is still competitive. ";
     }
     else if ((weightedGPA >= Berkeley.WeightedGPA25Pct) && (satcriticalReading >= Berkeley.SATCriticalReading25Pct) && (satMath >= Berkeley.SATMath25Pct) && (actComposite >= Berkeley.ACTComposite25Pct) && (actMath >= Berkeley.ACTMath25Pct) && (actEnglish >= Berkeley.ACTEnglish25Pct)) {
-        return "Would be sufficient at another school, but won't be enough.";
+        document.getElementById("Berkeley").innerHTML =  "Would be sufficient at another school, but won't be enough.";
     }
     else {
-        return "Little to no chance. Try an easier school.";
+        document.getElementById("Berkeley").innerHTML =  "Little to no chance. Try an easier school.";
     }
 }
 
 function checkWashington() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((weightedGPA >= Washington.WeightedGPA75Pct) && (satcriticalReading >= Washington.SATCriticalReading75Pct) && (satMath >= Washington.SATMath75Pct) && (actComposite >= Washington.ACTComposite75Pct) && (actMath >= Washington.ACTMath75Pct) && (actEnglish >= Washington.ACTEnglish75Pct)) {
-        return "Top applicant, high chances. ";
+        document.getElementById("Washington").innerHTML =  "Top applicant, high chances. ";
     }
     else if ((weightedGPA >= Washington.WeightedGPA25Pct) && (satcriticalReading >= Washington.SATCriticalReading25Pct) && (satMath >= Washington.SATMath25Pct) && (actComposite >= Washington.ACTComposite25Pct) && (actMath >= Washington.ACTMath25Pct) && (actEnglish >= Washington.ACTEnglish25Pct)) {
-        return "Could go either way.";
+        document.getElementById("Washington").innerHTML =  "Could go either way.";
     }
     else {
-        return "Little to no chance. Try an easier school.";
+        document.getElementById("Washington").innerHTML =  "Little to no chance. Try an easier school.";
     }
 }
 
 function checkOregon() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((studentApplicant.WeightedGPA >= Oregon.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Oregon.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Oregon.SATMath75Pct) && (studentApplicant.ACTComposite >= Oregon.ACTComposite75Pct) && (studentApplicant.ACTMath >= Oregon.ACTMath75Pct) && (studentApplicant.ACTEnglish >= Oregon.ACTEnglish75Pct)) {
-        return "Top applicant, high chances. ";
+        document.getElementById("Oregon").innerHTML = "Top applicant, high chances. ";
     }
     else if ((weightedGPA >= Oregon.WeightedGPA25Pct) && (satcriticalReading >= Oregon.SATCriticalReading25Pct) && (satMath >= oregon.SATMath25Pct) && (actComposite >= Oregon.ACTComposite25Pct) && (actMath >= Oregon.ACTMath25Pct) && (actEnglish >= Oregon.ACTEnglish25Pct)) {
-        return "Could go either way.";
+        document.getElementById("Oregon").innerHTML = "Could go either way.";
     }
     else {
-        return "Little to no chance. Try an easier school.";
+        document.getElementById("Oregon").innerHTML =  "Little to no chance. Try an easier school.";
     }
 }
 
