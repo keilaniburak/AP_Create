@@ -133,17 +133,17 @@ var Oregon = new College(3.0, 3.6, 500, 620, 500, 610, 22, 27, 21, 27, 21, 28);
 var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 
 var weightedGPA = document.getElementById('screen1').value;
-var satcriticalReadng = document.getElementById('screen2').value;
+var satcriticalReading = document.getElementById('screen2').value;
 var satMath = document.getElementById('screen3').value;
 var actComposite = document.getElementById('screen4').value;
 var actMath = document.getElementById('screen5').value;
 var actEnglish = document.getElementById('screen6').value;
 
 function checkHarvard() {
-    if ((weightedGPA >= Harvard.WeightedGPA75Pct) && (satcriticalReadng == Harvard.SATCriticalReading75Pct) && (satMath == Harvard.SATMath75Pct) && (actComposite >= Harvard.ACTComposite75Pct) && (actMath >= Harvard.ACTMath75Pct) && (actEnglish >= Harvard.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Harvard.WeightedGPA75Pct) && (satcriticalReading == Harvard.SATCriticalReading75Pct) && (satMath == Harvard.SATMath75Pct) && (actComposite >= Harvard.ACTComposite75Pct) && (actMath >= Harvard.ACTMath75Pct) && (actEnglish >= Harvard.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Harvard.WeightedGPA25Pct) && (satcriticalReadng >= Harvard.SATCriticalReading25Pct) && (satMath >= Harvard.SATMath25Pct) && (actComposite  >= Harvard.ACTComposite25Pct) && (actMath >= Harvard.ACTMath25Pct) && (actEnglish >= Harvard.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Harvard.WeightedGPA25Pct) && (satcriticalReading >= Harvard.SATCriticalReading25Pct) && (satMath >= Harvard.SATMath25Pct) && (actComposite  >= Harvard.ACTComposite25Pct) && (actMath >= Harvard.ACTMath25Pct) && (actEnglish >= Harvard.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -152,10 +152,10 @@ function checkHarvard() {
 }
 
 function checkBerkeley() {
-    if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReadng >= Berkeley.SATCriticalReading75Pct) && (satMath >= Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReading >= Berkeley.SATCriticalReading75Pct) && (satMath >= Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Berkeley.WeightedGPA25Pct) && (satcriticalReadng >= Berkeley.SATCriticalReading25Pct) && (satMath >= Berkeley.SATMath25Pct) && (actComposite >= Berkeley.ACTComposite25Pct) && (actMath >= Berkeley.ACTMath25Pct) && (actEnglish >= Berkeley.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Berkeley.WeightedGPA25Pct) && (satcriticalReading >= Berkeley.SATCriticalReading25Pct) && (satMath >= Berkeley.SATMath25Pct) && (actComposite >= Berkeley.ACTComposite25Pct) && (actMath >= Berkeley.ACTMath25Pct) && (actEnglish >= Berkeley.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -164,10 +164,10 @@ function checkBerkeley() {
 }
 
 function checkWashington() {
-    if ((weightedGPA >= Washington.WeightedGPA75Pct) && (satcriticalReadng >= Washington.SATCriticalReading75Pct) && (satMath >= Washington.SATMath75Pct) && (actComposite >= Washington.ACTComposite75Pct) && (actMath >= Washington.ACTMath75Pct) && (actEnglish >= Washington.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Washington.WeightedGPA75Pct) && (satcriticalReading >= Washington.SATCriticalReading75Pct) && (satMath >= Washington.SATMath75Pct) && (actComposite >= Washington.ACTComposite75Pct) && (actMath >= Washington.ACTMath75Pct) && (actEnglish >= Washington.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Washington.WeightedGPA25Pct) && (satcriticalReadng >= Washington.SATCriticalReading25Pct) && (satMath >= Washington.SATMath25Pct) && (actComposite >= Washington.ACTComposite25Pct) && (actMath >= Washington.ACTMath25Pct) && (actEnglish >= Washington.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Washington.WeightedGPA25Pct) && (satcriticalReading >= Washington.SATCriticalReading25Pct) && (satMath >= Washington.SATMath25Pct) && (actComposite >= Washington.ACTComposite25Pct) && (actMath >= Washington.ACTMath25Pct) && (actEnglish >= Washington.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -176,10 +176,10 @@ function checkWashington() {
 }
 
 function checkOregon() {
-    if ((weightedGPA >= Oregon.WeightedGPA75Pct) && (satcriticalReadng >= Oregon.SATCriticalReading75Pct) && (satMath >= Oregon.SATMath75Pct) && (actComposite >= Oregon.ACTComposite75Pct) && (actMath >= Oregon.ACTMath75Pct) && (actEnglish >= Oregon.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Oregon.WeightedGPA75Pct) && (satcriticalReading >= Oregon.SATCriticalReading75Pct) && (satMath >= Oregon.SATMath75Pct) && (actComposite >= Oregon.ACTComposite75Pct) && (actMath >= Oregon.ACTMath75Pct) && (actEnglish >= Oregon.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Oregon.WeightedGPA25Pct) && (satcriticalReadng >= Oregon.SATCriticalReading25Pct) && (satMath >= oregon.SATMath25Pct) && (actComposite >= Oregon.ACTComposite25Pct) && (actMath >= Oregon.ACTMath25Pct) && (actEnglish >= Oregon.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Oregon.WeightedGPA25Pct) && (satcriticalReading >= Oregon.SATCriticalReading25Pct) && (satMath >= oregon.SATMath25Pct) && (actComposite >= Oregon.ACTComposite25Pct) && (actMath >= Oregon.ACTMath25Pct) && (actEnglish >= Oregon.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -188,10 +188,10 @@ function checkOregon() {
 }
 
 function checkHawaii() {
-    if ((weightedGPA >= Hawaii.WeightedGPA75Pct) && (satcriticalReadng >= Hawaii.SATCriticalReading75Pct) && (satMath >= Hawaii.SATMath75Pct) && (actComposite >= Hawaii.ACTComposite75Pct) && (actMath >= Hawaii.ACTMath75Pct) && (actEnglish >= Hawaii.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Hawaii.WeightedGPA75Pct) && (satcriticalReading >= Hawaii.SATCriticalReading75Pct) && (satMath >= Hawaii.SATMath75Pct) && (actComposite >= Hawaii.ACTComposite75Pct) && (actMath >= Hawaii.ACTMath75Pct) && (actEnglish >= Hawaii.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Hawaii.WeightedGPA25Pct) && (satcriticalReadng >= Hawaii.SATCriticalReading25Pct) && (satMath >= Hawaii.SATMath25Pct) && (actComposite >= Hawaii.ACTComposite25Pct) && (actMath >= Hawaii.ACTMath25Pct) && (actEnglish >= Hawaii.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Hawaii.WeightedGPA25Pct) && (satcriticalReading >= Hawaii.SATCriticalReading25Pct) && (satMath >= Hawaii.SATMath25Pct) && (actComposite >= Hawaii.ACTComposite25Pct) && (actMath >= Hawaii.ACTMath25Pct) && (actEnglish >= Hawaii.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
