@@ -152,7 +152,7 @@ function checkHarvard() {
 }
 
 function checkBerkeley() {
-    if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReadng == Berkeley.SATCriticalReading75Pct) && (satMath == Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReadng >= Berkeley.SATCriticalReading75Pct) && (satMath >= Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((weightedGPA >= Berkeley.WeightedGPA25Pct) && (satcriticalReadng >= Berkeley.SATCriticalReading25Pct) && (satMath >= Berkeley.SATMath25Pct) && (actComposite >= Berkeley.ACTComposite25Pct) && (actMath >= Berkeley.ACTMath25Pct) && (actEnglish >= Berkeley.ACTEnglish25Pct)) {
@@ -164,7 +164,7 @@ function checkBerkeley() {
 }
 
 function checkWashington() {
-    if ((weightedGPA >= Washington.WeightedGPA75Pct) && (satcriticalReadng == Washington.SATCriticalReading75Pct) && (satMath == Washington.SATMath75Pct) && (actComposite >= Washington.ACTComposite75Pct) && (actMath >= Washington.ACTMath75Pct) && (actEnglish >= Washington.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Washington.WeightedGPA75Pct) && (satcriticalReadng >= Washington.SATCriticalReading75Pct) && (satMath >= Washington.SATMath75Pct) && (actComposite >= Washington.ACTComposite75Pct) && (actMath >= Washington.ACTMath75Pct) && (actEnglish >= Washington.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((weightedGPA >= Washington.WeightedGPA25Pct) && (satcriticalReadng >= Washington.SATCriticalReading25Pct) && (satMath >= Washington.SATMath25Pct) && (actComposite >= Washington.ACTComposite25Pct) && (actMath >= Washington.ACTMath25Pct) && (actEnglish >= Washington.ACTEnglish25Pct)) {
@@ -176,7 +176,7 @@ function checkWashington() {
 }
 
 function checkOregon() {
-    if ((weightedGPA >= Oregon.WeightedGPA75Pct) && (satcriticalReadng == Oregon.SATCriticalReading75Pct) && (satMath == Oregon.SATMath75Pct) && (actComposite >= Oregon.ACTComposite75Pct) && (actMath >= Oregon.ACTMath75Pct) && (actEnglish >= Oregon.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Oregon.WeightedGPA75Pct) && (satcriticalReadng >= Oregon.SATCriticalReading75Pct) && (satMath >= Oregon.SATMath75Pct) && (actComposite >= Oregon.ACTComposite75Pct) && (actMath >= Oregon.ACTMath75Pct) && (actEnglish >= Oregon.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((weightedGPA >= Oregon.WeightedGPA25Pct) && (satcriticalReadng >= Oregon.SATCriticalReading25Pct) && (satMath >= oregon.SATMath25Pct) && (actComposite >= Oregon.ACTComposite25Pct) && (actMath >= Oregon.ACTMath25Pct) && (actEnglish >= Oregon.ACTEnglish25Pct)) {
@@ -188,7 +188,7 @@ function checkOregon() {
 }
 
 function checkHawaii() {
-    if ((weightedGPA >= Hawaii.WeightedGPA75Pct) && (satcriticalReadng == Hawaii.SATCriticalReading75Pct) && (satMath == Hawaii.SATMath75Pct) && (actComposite >= Hawaii.ACTComposite75Pct) && (actMath >= Hawaii.ACTMath75Pct) && (actEnglish >= Hawaii.ACTEnglish75Pct)) {
+    if ((weightedGPA >= Hawaii.WeightedGPA75Pct) && (satcriticalReadng >= Hawaii.SATCriticalReading75Pct) && (satMath >= Hawaii.SATMath75Pct) && (actComposite >= Hawaii.ACTComposite75Pct) && (actMath >= Hawaii.ACTMath75Pct) && (actEnglish >= Hawaii.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
     else if ((weightedGPA >= Hawaii.WeightedGPA25Pct) && (satcriticalReadng >= Hawaii.SATCriticalReading25Pct) && (satMath >= Hawaii.SATMath25Pct) && (actComposite >= Hawaii.ACTComposite25Pct) && (actMath >= Hawaii.ACTMath25Pct) && (actEnglish >= Hawaii.ACTEnglish25Pct)) {
