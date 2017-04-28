@@ -30,7 +30,8 @@ var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 function checkChances() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
 
-    checkHawaii();
+   result = checkHawaii();
+    return result;
 }
 
 function checkHarvard() {
@@ -88,13 +89,13 @@ function checkOregon() {
 function checkHawaii() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((studentApplicant.WeightedGPA >= Hawaii.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Hawaii.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Hawaii.SATMath75Pct) && (studentApplicant.ACTComposite >= Hawaii.ACTComposite75Pct) && (studentApplicant.ACTMath >= Hawaii.ACTMath75Pct) && (studentApplicant.ACTEnglish >= Hawaii.ACTEnglish75Pct)) {
-        return "Top applicant, high chances. ";
+        document.getElementById("Hawaii").innerHTML = "Top applicant, high chances. ";
     }
     else if ((studentApplicant.WeightedGPA >= Hawaii.WeightedGPA25Pct) && (studentApplicant.SATCriticalReading >= Hawaii.SATCriticalReading25Pct) && (studentApplicant.SATMath >= Hawaii.SATMath25Pct) && (studentApplicant.ACTComposite >= Hawaii.ACTComposite25Pct) && (studentApplicant.ACTMath >= Hawaii.ACTMath25Pct) && (studentApplicant.ACTEnglish >= Hawaii.ACTEnglish25Pct)) {
-        return "Could go either way.";
+        document.getElementById("Hawaii").innerHTML = "Could go either way.";
     }
     else {
-        return "Little to no chance. Try an easier school.";
+        document.getElementById("Hawaii").innerHTML =  "Little to no chance. Try an easier school.";
     }
 }
 
