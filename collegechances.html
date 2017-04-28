@@ -20,15 +20,12 @@
     <h2>ACT English Score</h2>
     <input type="text" id="screen6" size="15" maxlength="5" style="text-align: right">
     <p>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(harvardInputErrorCheck())">See Chances at Harvard</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(berkeleyInputErrorCheck())">See Chances at Cal</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(washingtonInputErrorCheck())">See Chances at UW</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(oregonInputErrorCheck())">See Chances at UO</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(hawaiiInputErrorCheck())">See Chances at UH</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(checkHawaii())">See Chances at Hawaii</button>
         <p/>
     <div id="scoreboard">
         <table class="table">
             <tr>
+                <td></td>
                 <td>Hawaii</td>
                 <td>Oregon</td>
                 <td>Washington</td>
@@ -36,11 +33,12 @@
                 <td>Harvard</td>
             </tr>
             <tr>
-                <td id="Hawaii">0</td>
-                <td id="Oregon">0</td>
-                <td id="Washington">0</td>
-                <td id="Berkeley">0</td>
-                <td id="Harvard">0</td>
+                <td id="RowNames"></td>
+                <td id="Hawaii"></td>
+                <td id="Oregon"></td>
+                <td id="Washington"></td>
+                <td id="Berkeley"></td>
+                <td id="Harvard"></td>
             </tr>
         </table>
     </div>
