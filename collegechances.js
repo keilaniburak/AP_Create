@@ -27,12 +27,9 @@ var Washington = new College(3.5, 3.9, 540, 660, 610, 710, 26, 31, 26, 32, 25, 3
 var Oregon = new College(3.0, 3.6, 500, 620, 500, 610, 22, 27, 21, 27, 21, 28);
 var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 
-var weightedGPA = document.getElementById('screen1').value;
-var satcriticalReading = document.getElementById('screen2').value;
-var satMath = document.getElementById('screen3').value;
-var actComposite = document.getElementById('screen4').value;
-var actMath = document.getElementById('screen5').value;
-var actEnglish = document.getElementById('screen6').value;
+function checkChances() {
+    var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen5').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
+
 
 function checkHarvard() {
     if ((weightedGPA >= Harvard.WeightedGPA75Pct) && (satcriticalReading == Harvard.SATCriticalReading75Pct) && (satMath == Harvard.SATMath75Pct) && (actComposite >= Harvard.ACTComposite75Pct) && (actMath >= Harvard.ACTMath75Pct) && (actEnglish >= Harvard.ACTEnglish75Pct)) {
@@ -83,10 +80,10 @@ function checkOregon() {
 }
 
 function checkHawaii() {
-    if ((weightedGPA >= Hawaii.WeightedGPA75Pct) && (satcriticalReading >= Hawaii.SATCriticalReading75Pct) && (satMath >= Hawaii.SATMath75Pct) && (actComposite >= Hawaii.ACTComposite75Pct) && (actMath >= Hawaii.ACTMath75Pct) && (actEnglish >= Hawaii.ACTEnglish75Pct)) {
+    if ((studentApplicant.WeightedGPA >= Hawaii.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Hawaii.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Hawaii.SATMath75Pct) && (studentApplicant.ACTComposite >= Hawaii.ACTComposite75Pct) && (studentApplicant.ACTMath >= Hawaii.ACTMath75Pct) && (studentApplicant.ACTEnglish >= Hawaii.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Hawaii.WeightedGPA25Pct) && (satcriticalReading >= Hawaii.SATCriticalReading25Pct) && (satMath >= Hawaii.SATMath25Pct) && (actComposite >= Hawaii.ACTComposite25Pct) && (actMath >= Hawaii.ACTMath25Pct) && (actEnglish >= Hawaii.ACTEnglish25Pct)) {
+    else if ((studentApplicant.WeightedGPA >= Hawaii.WeightedGPA25Pct) && (studentApplicant.SATCriticalReading >= Hawaii.SATCriticalReading25Pct) && (studentApplicant.SATMath >= Hawaii.SATMath25Pct) && (studentApplicant.ACTComposite >= Hawaii.ACTComposite25Pct) && (studentApplicant.ACTMath >= Hawaii.ACTMath25Pct) && (studentApplicant.ACTEnglish >= Hawaii.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -95,7 +92,7 @@ function checkHawaii() {
 }
 
 function inputerrorCheck() {
-    if ((weightedGPA < 0 || weightedGPA > 5) || (satcriticalReading > 800 || satcriticalReading < 200) || (satMath > 800 || satMath < 200) ||(actComposite > 36 || actComposite < 0) || (actMath > 36 || actMath < 0) || (actEnglish > 36 || actEnglish < 0)) {
+    if ((studentApplicant.WeightedGPA < 0 || studentApplicant.WeightedGPA > 5) || (studentApplicant.SATCriticalReading > 800 || studentApplicant.SATCriticalReading < 200) || (studentApplicant.SATMath > 800 || studentApplicant.SATMath < 200) ||(studentApplicant.ACTComposite > 36 || studentApplicant.ACTComposite < 0) || (studentApplicant.ACTMath > 36 || studentApplicant.ACTMath < 0) || (studentApplicant.ACTEnglish > 36 || studentApplicant.ACTEnglish < 0)) {
         return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
     }
    else {
