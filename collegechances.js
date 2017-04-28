@@ -163,3 +163,4 @@ function getApplicantData() {
     var actMath = document.getElementById('screen5').value;
     var actEnglish = document.getElementById('screen6').value;
 }
+
