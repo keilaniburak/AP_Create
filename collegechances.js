@@ -32,12 +32,11 @@ function checkChances() {
     checkHawaii();
 }
 
-
 function checkHarvard() {
     if ((weightedGPA >= Harvard.WeightedGPA75Pct) && (satcriticalReading == Harvard.SATCriticalReading75Pct) && (satMath == Harvard.SATMath75Pct) && (actComposite >= Harvard.ACTComposite75Pct) && (actMath >= Harvard.ACTMath75Pct) && (actEnglish >= Harvard.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
-    else if ((weightedGPA >= Harvard.WeightedGPA25Pct) && (satcriticalReading >= Harvard.SATCriticalReading25Pct) && (satMath >= Harvard.SATMath25Pct) && (actComposite  >= Harvard.ACTComposite25Pct) && (actMath >= Harvard.ACTMath25Pct) && (actEnglish >= Harvard.ACTEnglish25Pct)) {
+    else if ((weightedGPA >= Harvard.WeightedGPA25Pct) && (satcriticalReading >= Harvard.SATCriticalReading25Pct) && (satMath >= Harvard.SATMath25Pct) && (actComposite >= Harvard.ACTComposite25Pct) && (actMath >= Harvard.ACTMath25Pct) && (actEnglish >= Harvard.ACTEnglish25Pct)) {
         return "Would be sufficient at another school, but won't be enough.";
     }
     else {
@@ -82,6 +81,7 @@ function checkOregon() {
 }
 
 function checkHawaii() {
+    var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen5').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((studentApplicant.WeightedGPA >= Hawaii.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Hawaii.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Hawaii.SATMath75Pct) && (studentApplicant.ACTComposite >= Hawaii.ACTComposite75Pct) && (studentApplicant.ACTMath >= Hawaii.ACTMath75Pct) && (studentApplicant.ACTEnglish >= Hawaii.ACTEnglish75Pct)) {
         return "Top applicant, but Harvard is VERY competitive. ";
     }
@@ -94,11 +94,10 @@ function checkHawaii() {
 }
 
 function inputerrorCheck() {
-    if ((studentApplicant.WeightedGPA < 0 || studentApplicant.WeightedGPA > 5) || (studentApplicant.SATCriticalReading > 800 || studentApplicant.SATCriticalReading < 200) || (studentApplicant.SATMath > 800 || studentApplicant.SATMath < 200) ||(studentApplicant.ACTComposite > 36 || studentApplicant.ACTComposite < 0) || (studentApplicant.ACTMath > 36 || studentApplicant.ACTMath < 0) || (studentApplicant.ACTEnglish > 36 || studentApplicant.ACTEnglish < 0)) {
+    if ((studentApplicant.WeightedGPA < 0 || studentApplicant.WeightedGPA > 5) || (studentApplicant.SATCriticalReading > 800 || studentApplicant.SATCriticalReading < 200) || (studentApplicant.SATMath > 800 || studentApplicant.SATMath < 200) || (studentApplicant.ACTComposite > 36 || studentApplicant.ACTComposite < 0) || (studentApplicant.ACTMath > 36 || studentApplicant.ACTMath < 0) || (studentApplicant.ACTEnglish > 36 || studentApplicant.ACTEnglish < 0)) {
         return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
     }
-   else {
-   }
+    else {}
 }
 
 function checkAll() {
