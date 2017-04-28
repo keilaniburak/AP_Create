@@ -26,14 +26,23 @@
         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(oregonInputErrorCheck())">See Chances at UO</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" onclick="document.write(hawaiiInputErrorCheck())">See Chances at UH</button>
         <p/>
-    <table class="table" id="chances">
-
+    <div id="scoreboard">
+        <table class="table">
             <tr>
-                <td>Harvard</td><td>UC Berkeley</td><td>Washington</td><td>Oregon</td><td>Hawaii</td>
+                <td>Hawaii</td>
+                <td>Oregon</td>
+                <td>Washington</td>
+                <td>Berkeley</td>
+                <td>Harvard</td>
             </tr>
             <tr>
-                <td id="harvard"></td><td id="berkeley"></td><td id="washingon"></td><td id="oregon"></td><td id="hawaii"></td>
+                <td id="Hawaii">0</td>
+                <td id="Oregon">0</td>
+                <td id="Washington">0</td>
+                <td id="Berkeley">0</td>
+                <td id="Harvard">0</td>
             </tr>
         </table>
+    </div>
 </body>
 </html>

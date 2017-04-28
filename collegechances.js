@@ -199,3 +199,18 @@ function checkHawaii() {
     }
 }
 
+function inputerrorCheck() {
+    if ((weightedGPA < 0 || weightedGPA > 5) || (satcriticalReading > 800 || satcriticalReading < 200) || (satMath > 800 || satMath < 200) ||(actComposite > 36 || actComposite < 0) || (actMath > 36 || actMath < 0) || (actEnglish > 36 || actEnglish < 0)) {
+        return "ERROR INVALID INPUT. PLEASE CHECK INPUTS.";
+    }
+   else {
+   }
+}
+
+function checkAll() {
+    checkHarvard();
+    checkBerkeley();
+    checkWashington();
+    checkOregon();
+    checkHawaii();
+}
