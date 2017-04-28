@@ -30,8 +30,12 @@ var Hawaii = new College(3.0, 3.5, 480, 580, 490, 610, 20, 25, 20, 26, 19, 25);
 function checkChances() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
 
-   result = checkHawaii();
-    return result;
+    checkHawaii();
+    checkOregon();
+    checkWashington();
+    checkBerkeley();
+    checkHarvard();
+
 }
 
 function checkHarvard() {
@@ -50,7 +54,7 @@ function checkHarvard() {
 function checkBerkeley() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((weightedGPA >= Berkeley.WeightedGPA75Pct) && (satcriticalReading >= Berkeley.SATCriticalReading75Pct) && (satMath >= Berkeley.SATMath75Pct) && (actComposite >= Berkeley.ACTComposite75Pct) && (actMath >= Berkeley.ACTMath75Pct) && (actEnglish >= Berkeley.ACTEnglish75Pct)) {
-        document.getElementById("Berkeley").innerHTML = "Top applicant, but Cal is still competitive. ";
+        document.getElementById("Berkeley").innerHTML = "Top applicant, but Cal is still competitive.";
     }
     else if ((weightedGPA >= Berkeley.WeightedGPA25Pct) && (satcriticalReading >= Berkeley.SATCriticalReading25Pct) && (satMath >= Berkeley.SATMath25Pct) && (actComposite >= Berkeley.ACTComposite25Pct) && (actMath >= Berkeley.ACTMath25Pct) && (actEnglish >= Berkeley.ACTEnglish25Pct)) {
         document.getElementById("Berkeley").innerHTML = "Would be sufficient at another school, but won't be enough.";
@@ -69,7 +73,7 @@ function checkWashington() {
         document.getElementById("Washington").innerHTML "Could go either way.";
     }
     else {
-        document.getElementById("Washington").innerHTML "Little to no chance. Try an easier school.";
+        document.getElementById("Washington").innerHTML = "Little to no chance. Try an easier school.";
     }
 }
 
@@ -95,7 +99,7 @@ function checkHawaii() {
         document.getElementById("Hawaii").innerHTML = "Could go either way.";
     }
     else {
-        document.getElementById("Hawaii").innerHTML =  "Little to no chance. Try an easier school.";
+        document.getElementById("Hawaii").innerHTML = "Little to no chance. Try an easier school.";
     }
 }
 
