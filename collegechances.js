@@ -106,10 +106,10 @@ function checkHawaii() {
     }
 }
 
-function inputerrorCheck() {
+function inputErrorCheck() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
     if ((studentApplicant.WeightedGPA < 0 || studentApplicant.WeightedGPA > 5) || (studentApplicant.SATCriticalReading > 800 || studentApplicant.SATCriticalReading < 200) || (studentApplicant.SATMath > 800 || studentApplicant.SATMath < 200) || (studentApplicant.ACTComposite > 36 || studentApplicant.ACTComposite < 0) || (studentApplicant.ACTMath > 36 || studentApplicant.ACTMath < 0) || (studentApplicant.ACTEnglish > 36 || studentApplicant.ACTEnglish < 0)) {
-        throw new Error("ERROR: INVALID INPUTS. PLEASE CHECK INPUT VALUES.");
+       document.getElementById("chances").innerHTML = "ERROR: INVALID INPUTS. PLEASE REFRESH THE PAGE AND MAKE SURE ALL TEXT BOXES CONTAIN VALID INPUTS";
     }
     else {}
 }
