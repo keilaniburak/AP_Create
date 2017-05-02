@@ -56,11 +56,11 @@ function checkHarvard() {
 
 function checkBerkeley() {
     var studentApplicant = new Applicant(document.getElementById('screen1').value, document.getElementById('screen2').value, document.getElementById('screen3').value, document.getElementById('screen4').value, document.getElementById('screen5').value, document.getElementById('screen6').value);
-    if ((studentApplicant.WeightedGPA >= Berkeley.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Berkeley.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Berkeley.SATMath75Pct) && (studentApplicant.ACTComposite >= Berkeley.ACTComposite75Pct) && (studentApplicant.ACTMath >= Berkeley.ACTMath75Pct) && (studentApplicant.ACTEnglish >= Berkeley.ACTEnglish75Pct)) {
-        document.getElementById("Berkeley").innerHTML = "Top applicant, but Cal is competitive.";
+    if ((studentApplicant.WeightedGPA >= Berkeley.WeightedGPA75Pct) && (studentApplicant.SATCriticalReading >= Berkeley.SATCriticalReading75Pct) && (studentApplicant.SATMath >= Berkeley.SATMath75Pct) && (studentApplicant.ACTComposite >= Berkeley.ACTComposite75Pct) && (studentApplicant.ACTMath >= Berkeley.ACTMath75Pct) && (studentApplicant.ACTEnglish  >= Berkeley.ACTEnglish75Pct)) {
+        document.getElementById("Berkeley").innerHTML = "Top applicant, but Cal is still competitive.";
     }
-    else if ((studentApplicant.WeightedGPA >= Berkeley.WeightedGPA25Pct) && (studentApplicant.SATCriticalReading >= Berkeley.SATCriticalReading25Pct) && (studentApplicant.ACTMath >= Berkeley.SATMath25Pct) && (studentApplicant.ACTComposite >= Berkeley.ACTComposite25Pct) && (studentApplicant.ACTMath >= Berkeley.ACTMath25Pct) && (studentApplicant.ACTEnglish >= Berkeley.ACTEnglish25Pct)) {
-        document.getElementById("Berkeley").innerHTML = "Would be sufficient at other schools but might not be enough.";
+    else if ((studentApplicant.WeightedGPA >= Berkeley.WeightedGPA25Pct) && (studentApplicant.SATCriticalReading >= Berkeley.SATCriticalReading25Pct) && (studentApplicant.SATMath >= Berkeley.SATMath25Pct) && (studentApplicant.ACTComposite >= Berkeley.ACTComposite25Pct) && (studentApplicant.ACTMath >= Berkeley.ACTMath25Pct) && (studentApplicant.ACTEnglish >= Berkeley.ACTEnglish25Pct)) {
+        document.getElementById("Berkeley").innerHTML = "Would be sufficient at another school, but won't be enough.";
     }
     else {
         document.getElementById("Berkeley").innerHTML = "Little to no chance.";
@@ -112,12 +112,4 @@ function inputerrorCheck() {
         throw new Error("ERROR: INVALID INPUTS. PLEASE CHECK INPUT VALUES.");
     }
     else {}
-}
-
-function checkAll() {
-    checkHarvard();
-    checkBerkeley();
-    checkWashington();
-    checkOregon();
-    checkHawaii();
 }
